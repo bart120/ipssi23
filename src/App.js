@@ -1,11 +1,15 @@
-import logo from './logo.svg';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Menu from './core/components/layout/Menu';
+import MainRoutes from './core/routes/MainRoutes';
 
 function App() {
   return (
     <div>
-      <Menu></Menu>
+      <BrowserRouter>
+        <Menu></Menu>
+        <MainRoutes />
+      </BrowserRouter>
     </div>
   );
 }
