@@ -15,19 +15,17 @@ const Login = () => {
         const obj = { ...userLog };
         obj[ev.target.name] = ev.target.value;
         setUserLog(obj);
+        console.log(obj);
     }
 
     return (
         <div>
             <h1>Connexion</h1>
             <Form noValidate onSubmit={submit}>
-                <Form.Group>
-                    <Form.Label>Login</Form.Label>
-                    <Form.Control name="email" type="email" onChange={changeFormField}
-                        placeholder="Votre login" />
-                </Form.Group>
+
                 <InputMail label="Login" placeholder="Votre login"
                     onChange={changeFormField} name="email" />
+
                 <Form.Group>
                     <Form.Label>Mot de passe</Form.Label>
                     <Form.Control name="password" type="password" onChange={changeFormField} />
