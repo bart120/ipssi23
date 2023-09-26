@@ -12,6 +12,7 @@ const Menu = () => {
                     <Nav className="me-auto">
                         <Link to={'/'} className="nav-link">Home</Link>
                         <Link to={'/countries'} className="nav-link">Pays</Link>
+                        <Link to={'/auth/login'} className="nav-link">Se connecter</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
