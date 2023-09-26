@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Button, Form } from "react-bootstrap";
+import InputMail from "../../core/components/forms/InputMail";
 
 const Login = () => {
 
@@ -22,8 +23,11 @@ const Login = () => {
             <Form noValidate onSubmit={submit}>
                 <Form.Group>
                     <Form.Label>Login</Form.Label>
-                    <Form.Control name="email" type="email" onChange={changeFormField} />
+                    <Form.Control name="email" type="email" onChange={changeFormField}
+                        placeholder="Votre login" />
                 </Form.Group>
+                <InputMail label="Login" placeholder="Votre login"
+                    onChange={changeFormField} name="email" />
                 <Form.Group>
                     <Form.Label>Mot de passe</Form.Label>
                     <Form.Control name="password" type="password" onChange={changeFormField} />
