@@ -1,11 +1,15 @@
 import { useContext } from "react";
-import { Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
+import { Button, Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { UserContext } from "../../contexts/AuthContext";
 
 const Menu = () => {
     const [user, setUser] = useContext(UserContext);
 
+    const logout = () => {
+        setUser(undefined);
+        sessionStorage.removeItem('USER');
+    }
     return (
         <Navbar expand="lg" bg="dark" data-bs-theme="dark">
             <Container>
@@ -16,7 +20,7 @@ const Menu = () => {
                         <Link to={'/'} className="nav-link">Home</Link>
                         <Link to={'/countries'} className="nav-link">Pays</Link>
                         {user ?
-                            <span style={{ color: 'white' }}>Bonjour {user?.firstname} {user?.lastname}</span> :
+                            <span style={{ color: 'white' }}>Bonjour {user?.firstname} {user?.lastname} <Button className="btn btn-secondary" onClick={logout}>Se déconnecter</Button></span> :
                             <Link to={'/auth/login'} className="nav-link">Se connecter</Link>
                         }
 
