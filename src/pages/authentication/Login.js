@@ -1,13 +1,18 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import InputMail from "../../core/components/forms/InputMail";
+import { UserContext } from "../../core/contexts/AuthContext";
 
 const Login = () => {
 
     const [userLog, setUserLog] = useState({ email: '', password: '' });
+    const [user, setUser] = useContext(UserContext);
 
     const submit = (ev) => {
         ev.preventDefault();
+        //appel et retour serveur auth
+        let u = { lastname: 'Leponge', firstname: 'Bob', mail: userLog.email };
+        setUser(u);
 
     }
 
