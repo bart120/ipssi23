@@ -15,13 +15,26 @@ const CountriesDetail = () => {
 
     }, [])
 
+    const currencies = (obj) => {
+        const cs = [];
+        for (const prop in obj) {
+            cs.push(<li key={prop}>{obj[prop].name}</li>);
+        }
+        return cs;
+    }
+
     return (
         <div>
             <h1>{name}</h1>
+            <p>Capitales:</p>
             <ul>
                 {country?.capital?.map((c) => (
                     <li key={c}>{c}</li>
                 ))}
+            </ul>
+            <p>Devises:</p>
+            <ul>
+                {currencies(country?.currencies)}
             </ul>
         </div>
     );
