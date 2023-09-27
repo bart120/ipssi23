@@ -2,18 +2,21 @@ import { useContext, useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import InputMail from "../../core/components/forms/InputMail";
 import { UserContext } from "../../core/contexts/AuthContext";
+import { useNavigate } from "react-router";
 
 const Login = () => {
 
     const [userLog, setUserLog] = useState({ email: '', password: '' });
     const [user, setUser] = useContext(UserContext);
+    const navigate = useNavigate();
 
     const submit = (ev) => {
         ev.preventDefault();
         //appel et retour serveur auth
         let u = { lastname: 'Leponge', firstname: 'Bob', mail: userLog.email };
         setUser(u);
-
+        sessionStorage.setItem('USER', JSON.stringify(u));
+        navigate('/');
     }
 
     const changeFormField = (ev) => {

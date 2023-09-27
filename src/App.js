@@ -6,7 +6,8 @@ import { UserContext } from './core/contexts/AuthContext';
 import { useState } from 'react';
 
 function App() {
-  const [user, setUser] = useState(undefined)
+  const [user, setUser] = useState(JSON.parse(sessionStorage.getItem('USER')));
+
   return (
     <div>
 
