@@ -14,21 +14,21 @@ Une API Rest CRUD sur 2 objets:
 - des voitures: https://formation.inow.fr/demo/api/v1/cars
 
 exemple:
-GET all: https://formation.inow.fr/demo/api/v1/cars
-GET element: https://formation.inow.fr/demo/api/v1/cars/1
-POST: https://formation.inow.fr/demo/api/v1/cars {car object}
-PUT: https://formation.inow.fr/demo/api/v1/cars/1 {car object}
-DELETE: https://formation.inow.fr/demo/api/v1/cars/1
+- GET all: https://formation.inow.fr/demo/api/v1/cars
+- GET element: https://formation.inow.fr/demo/api/v1/cars/1
+- POST: https://formation.inow.fr/demo/api/v1/cars {car object}
+- PUT: https://formation.inow.fr/demo/api/v1/cars/1 {car object}
+- DELETE: https://formation.inow.fr/demo/api/v1/cars/1
 
 ## Fonctionnalités
 
 ### Layout
 Afficher un header avec menu, un footer (présents sur toutes les pages)
 Menu:
-  Home
-  Voir toutes les voitures
-  Ajouter une voiture (uniquement disponible si l'utilisateur est connecté)
-  Se connecter / Se déconnecter
+- Home
+- Voir toutes les voitures
+- Ajouter une voiture (uniquement disponible si l'utilisateur est connecté)
+- Se connecter / Se déconnecter
 
 ### Page d'accueil
 
