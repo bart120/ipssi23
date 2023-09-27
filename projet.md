@@ -66,6 +66,11 @@ La gestion du user en mémoire peut se faire avec ContextAPI ou Redux.
 ### Alert
 Sur les actions d'ajout, de modification et de supression, vous afficherez une alerte à l'utilisateur. Pour un effet plus sympa vous pouvez utiliser un composant perso (style toast) à la place du 'alert' standard JS.
 
+### Internationalisation (vrai bonus)
+
+Vous allez internationaliser votre application: la rendre multi-langues.
+aide: https://react.i18next.com/
+
 # Groupes et fonctionnement
 
 Le projet est a faire seul ou à deux.
