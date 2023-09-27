@@ -63,6 +63,9 @@ Formulaire de login sans appel serveur afin d'authentifier un utilisateur.
 Format de mail pour le login, Format pour le mot de passe: 6 caractères min, majuscule, minuscule, numérique et caractères spéciaux.
 La gestion du user en mémoire peut se faire avec ContextAPI ou Redux.
 
+### Alert
+Sur les actions d'ajout, de modification et de supression, vous afficherez une alerte à l'utilisateur. Pour un effet plus sympa vous pouvez utiliser un composant perso à la place du 'alert' standard JS.
+
 # Groupes et fonctionnement
 
 Le projet est a faire seul ou à deux.
