@@ -61,6 +61,7 @@ Cette page est uniquement accessible par les utilisateurs connectés.
 
 Formulaire de login sans appel serveur afin d'authentifier un utilisateur.
 Format de mail pour le login, Format pour le mot de passe: 6 caractères min, majuscule, minuscule, numérique et caractères spéciaux.
+La gestion du user en mémoire peut se faire avec ContextAPI ou Redux.
 
 # Groupes et fonctionnement
 
