@@ -1,0 +1,15 @@
+{
+    "translation": {
+        "header": {
+            "title": "Coccinelle",
+            "home": "Home",
+            "cars": "Cars",
+            "add": "Add car",
+            "login": "Login"
+        },
+        "login": {
+            "email": "Email",
+            "password": "Password"
+        }
+    }
+}

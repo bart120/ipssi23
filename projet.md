@@ -81,5 +81,6 @@ Les étudiants sont encouragés (obligés) à mettre en place un système de con
 
 Le rendu se fera le vendredi 29 septembre 2023.
 Le rendu se fera via votre lien du repo GIT.
+Mail de rendu: vleclerc@inow.fr
 Toute absence à la présentation entrainera un 0 (ZERO).
 Vous devrez présenter chacun votre tour votre travail réalisé et le résultat obtenu.
