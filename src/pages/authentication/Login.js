@@ -12,6 +12,7 @@ const Login = () => {
 
     const submit = (ev) => {
         ev.preventDefault();
+        let conf = window.confirm("est-ce que ça marche?");
         //appel et retour serveur auth
         let u = { lastname: 'Leponge', firstname: 'Bob', mail: userLog.email };
         setUser(u);
